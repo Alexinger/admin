@@ -1,0 +1,140 @@
+<!--Double navigation-->
+<header>
+
+    <!-- Sidebar navigation -->
+    <mdb-side-nav #sidenav class="sn-bg-1" [fixed]="false">
+
+        <mdb-navbar-brand>
+            <li>
+                <div class="logo-wrapper waves-light">
+                    <a href="#">
+                        <img src="http://mdbootstrap.com/img/logo/mdb-transparent.png" class="img-fluid flex-center">
+                    </a>
+                </div>
+            </li>
+        </mdb-navbar-brand>
+
+        <links>
+            <!-- Side navigation links -->
+            <li>
+                <ul class="collapsible collapsible-accordion">
+                    <mdb-accordion [multiple]="false" aria-multiselectable="false">
+
+                        <!-- Collapsible link -->
+                        <mdb-accordion-item>
+                            <mdb-accordion-item-head mdbWavesEffect>
+                                <i class="fa fa-chevron-right"></i> Wordpress сайты</mdb-accordion-item-head>
+                            <mdb-accordion-item-body>
+                                <ul>
+                                    <li>
+                                        <a href="#" class="waves-effect" mdbWavesEffect>Link 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="waves-effect" mdbWavesEffect>Link 2</a>
+                                    </li>
+                                </ul>
+                            </mdb-accordion-item-body>
+                        </mdb-accordion-item>
+
+                        <!-- Simple link -->
+                        <mdb-accordion-item class="no-collase">
+                            <mdb-accordion-item-head mdbWavesEffect>
+                                <i class="fa fa-hand-pointer-o"></i> Simple link</mdb-accordion-item-head>
+                            <mdb-accordion-item-body></mdb-accordion-item-body>
+                        </mdb-accordion-item>
+
+                        <!-- Collapsible link -->
+                        <mdb-accordion-item>
+                            <mdb-accordion-item-head mdbWavesEffect>
+                                <i class="fa fa-eye"></i> Collapsible menu 2</mdb-accordion-item-head>
+                            <mdb-accordion-item-body>
+                                <ul>
+                                    <li>
+                                        <a href="#" class="waves-effect" mdbWavesEffect>Link 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="waves-effect" mdbWavesEffect>Link 2</a>
+                                    </li>
+                                </ul>
+                            </mdb-accordion-item-body>
+                        </mdb-accordion-item>
+
+                        <!-- Simple link -->
+                        <mdb-accordion-item class="no-collase">
+                            <mdb-accordion-item-head mdbWavesEffect>
+                                <i class="fa fa-diamond"></i> Simple link 2</mdb-accordion-item-head>
+                            <mdb-accordion-item-body></mdb-accordion-item-body>
+                        </mdb-accordion-item>
+
+                    </mdb-accordion>
+                </ul>
+            </li>
+            <!--/. Side navigation links -->
+        </links>
+        <div class="sidenav-bg mask-strong"></div>
+    </mdb-side-nav>
+    <!--/. Sidebar navigation -->
+
+    <!-- Navbar -->
+    <mdb-navbar SideClass="navbar navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav" [containerInside]="false">
+
+        <navlinks class="navbar-container">
+            <!-- SideNav slide-out button -->
+            <div class="float-left">
+                <a (click)="sidenav.show()" class="button-collapse-non-fixed hidden-nav">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <!--/. SideNav slide-out button -->
+        </navlinks>
+
+        <mdb-navbar-brand>
+            <!-- Breadcrumb-->
+            <div class="breadcrumbs breadcrumbs-non-fixed breadcrumb-dn mr-auto">
+                <p i18n>All&nbsp;Wordpress</p>
+            </div>
+            <!--/. Breadcrumb-->
+        </mdb-navbar-brand>
+
+        <navlinks>
+            <ul class="nav navbar-nav nav-flex-icons ml-auto ie-double-nav">
+                <li class="nav-item bg-success rounded">
+                    <a class="nav-link waves-light small" mdbWavesEffect>
+                        <i class="fa fa-plus mr-1"></i>
+                        <span class="clearfix d-none d-sm-inline-block"> Добавить сайт</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-light" mdbWavesEffect>
+                        <i class="fa fa-braille mr-1"></i>
+                        <span class="clearfix d-none d-sm-inline-block"> API</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-light" mdbWavesEffect>
+                        <i class="fa fa-bell-o mr-1"></i>
+                        <span class="clearfix d-none d-sm-inline-block"> Уведомления</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-light" mdbWavesEffect>
+                        <i class="fa fa-user mr-1"></i>
+                        <span class="clearfix d-none d-sm-inline-block"> Аккаунт</span>
+                    </a>
+                </li>
+            </ul>
+        </navlinks>
+    </mdb-navbar>
+    <!--/. Navbar -->
+
+</header>
+<!--/.Double navigation-->
+
+
+<!--Main Layout-->
+<main>
+    <div class="container mt-5">
+        <router-outlet></router-outlet>
+    </div>
+</main>
+<!--/Main layout-->
