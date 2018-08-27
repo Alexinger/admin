@@ -13,6 +13,8 @@ import { LoginComponent } from './login/login.component';
 import { ListComponent } from './list/list.component';
 import { HomeComponent } from './home/home.component';
 import { ApiComponent } from './api/api.component';
+import { HelpComponent } from './help/help.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -22,9 +24,12 @@ import { ApiComponent } from './api/api.component';
       LoginComponent,
       ListComponent,
       HomeComponent,
-      ApiComponent
+      ApiComponent,
+      HelpComponent
    ],
    imports: [
+      HttpClientModule,
+      HttpModule,
       AppRoutingModule,
       BrowserModule,
       BrowserAnimationsModule,

@@ -373,7 +373,7 @@ var ApiComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--Double navigation-->\n<header>\n\n    <!-- Sidebar navigation -->\n    <mdb-side-nav #sidenav class=\"sn-bg-1\" [fixed]=\"false\">\n\n        <mdb-navbar-brand>\n            <li>\n                <div class=\"logo-wrapper waves-light\">\n                    <a href=\"#\">\n                        <img src=\"http://mdbootstrap.com/img/logo/mdb-transparent.png\" class=\"img-fluid flex-center\">\n                    </a>\n                </div>\n            </li>\n        </mdb-navbar-brand>\n\n        <links>\n            <!-- Side navigation links -->\n            <li>\n                <ul class=\"collapsible collapsible-accordion\">\n                    <mdb-accordion [multiple]=\"false\" aria-multiselectable=\"false\">\n\n                        <!-- Collapsible link -->\n                        <mdb-accordion-item>\n                            <mdb-accordion-item-head mdbWavesEffect>\n                                <i class=\"fa fa-chevron-right\"></i> Wordpress сайты</mdb-accordion-item-head>\n                            <mdb-accordion-item-body>\n                                <ul>\n                                    <li>\n                                        <a href=\"#\" class=\"waves-effect\" mdbWavesEffect>Link 1</a>\n                                    </li>\n                                    <li>\n                                        <a href=\"#\" class=\"waves-effect\" mdbWavesEffect>Link 2</a>\n                                    </li>\n                                </ul>\n                            </mdb-accordion-item-body>\n                        </mdb-accordion-item>\n\n                        <!-- Simple link -->\n                        <mdb-accordion-item class=\"no-collase\">\n                            <mdb-accordion-item-head mdbWavesEffect>\n                                <i class=\"fa fa-hand-pointer-o\"></i> Simple link</mdb-accordion-item-head>\n                            <mdb-accordion-item-body></mdb-accordion-item-body>\n                        </mdb-accordion-item>\n\n                        <!-- Collapsible link -->\n                        <mdb-accordion-item>\n                            <mdb-accordion-item-head mdbWavesEffect>\n                                <i class=\"fa fa-eye\"></i> Collapsible menu 2</mdb-accordion-item-head>\n                            <mdb-accordion-item-body>\n                                <ul>\n                                    <li>\n                                        <a href=\"#\" class=\"waves-effect\" mdbWavesEffect>Link 1</a>\n                                    </li>\n                                    <li>\n                                        <a href=\"#\" class=\"waves-effect\" mdbWavesEffect>Link 2</a>\n                                    </li>\n                                </ul>\n                            </mdb-accordion-item-body>\n                        </mdb-accordion-item>\n\n                        <!-- Simple link -->\n                        <mdb-accordion-item class=\"no-collase\">\n                            <mdb-accordion-item-head mdbWavesEffect>\n                                <i class=\"fa fa-diamond\"></i> Simple link 2</mdb-accordion-item-head>\n                            <mdb-accordion-item-body></mdb-accordion-item-body>\n                        </mdb-accordion-item>\n\n                    </mdb-accordion>\n                </ul>\n            </li>\n            <!--/. Side navigation links -->\n        </links>\n        <div class=\"sidenav-bg mask-strong\"></div>\n    </mdb-side-nav>\n    <!--/. Sidebar navigation -->\n\n    <!-- Navbar -->\n    <mdb-navbar SideClass=\"navbar navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav\" [containerInside]=\"false\">\n\n        <navlinks class=\"navbar-container\">\n            <!-- SideNav slide-out button -->\n            <div class=\"float-left\">\n                <a (click)=\"sidenav.show()\" class=\"button-collapse-non-fixed hidden-nav\">\n                    <i class=\"fa fa-bars\"></i>\n                </a>\n            </div>\n            <!--/. SideNav slide-out button -->\n        </navlinks>\n\n        <mdb-navbar-brand>\n            <!-- Breadcrumb-->\n            <div class=\"breadcrumbs breadcrumbs-non-fixed breadcrumb-dn mr-auto\">\n                <p i18n>All&nbsp;Wordpress</p>\n            </div>\n            <!--/. Breadcrumb-->\n        </mdb-navbar-brand>\n\n        <navlinks>\n            <ul class=\"nav navbar-nav nav-flex-icons ml-auto ie-double-nav\">\n                <li class=\"nav-item bg-success rounded\">\n                    <a class=\"nav-link waves-light small\" mdbWavesEffect>\n                        <i class=\"fa fa-plus mr-1\"></i>\n                        <span class=\"clearfix d-none d-sm-inline-block\"> Добавить сайт</span>\n                    </a>\n                </li>\n                <li class=\"nav-item\">\n                    <a class=\"nav-link waves-light\" mdbWavesEffect>\n                        <i class=\"fa fa-braille mr-1\"></i>\n                        <span class=\"clearfix d-none d-sm-inline-block\"> API</span>\n                    </a>\n                </li>\n                <li class=\"nav-item\">\n                    <a class=\"nav-link waves-light\" mdbWavesEffect>\n                        <i class=\"fa fa-bell-o mr-1\"></i>\n                        <span class=\"clearfix d-none d-sm-inline-block\"> Уведомления</span>\n                    </a>\n                </li>\n                <li class=\"nav-item\">\n                    <a class=\"nav-link waves-light\" mdbWavesEffect>\n                        <i class=\"fa fa-user mr-1\"></i>\n                        <span class=\"clearfix d-none d-sm-inline-block\"> Аккаунт</span>\n                    </a>\n                </li>\n            </ul>\n        </navlinks>\n    </mdb-navbar>\n    <!--/. Navbar -->\n\n</header>\n<!--/.Double navigation-->\n\n\n<!--Main Layout-->\n<main>\n    <div class=\"container mt-5\">\n        <router-outlet></router-outlet>\n    </div>\n</main>\n<!--/Main layout-->"
+module.exports = "<!--Double navigation-->\n<header>\n\n    <!-- Sidebar navigation -->\n    <mdb-side-nav #sidenav class=\"sn-bg-1\" [fixed]=\"false\">\n\n        <mdb-navbar-brand>\n            <li>\n                <div class=\"logo-wrapper waves-light\">\n                    <a href=\"/\">\n                        <img src=\"http://mdbootstrap.com/img/logo/mdb-transparent.png\" class=\"img-fluid flex-center\">\n                    </a>\n                </div>\n            </li>\n        </mdb-navbar-brand>\n\n        <links>\n            <!-- Side navigation links -->\n            <li>\n                <ul class=\"collapsible collapsible-accordion\">\n                    <mdb-accordion [multiple]=\"false\" aria-multiselectable=\"false\">\n\n                        <!-- Collapsible link -->\n                        <mdb-accordion-item>\n                            <mdb-accordion-item-head mdbWavesEffect>\n                                <i class=\"fa fa-chevron-right\"></i> Wordpress сайты</mdb-accordion-item-head>\n                            <mdb-accordion-item-body>\n                                <ul>\n                                    <li>\n                                        <a href=\"#\" class=\"waves-effect\" mdbWavesEffect>Link 1</a>\n                                    </li>\n                                    <li>\n                                        <a href=\"#\" class=\"waves-effect\" mdbWavesEffect>Link 2</a>\n                                    </li>\n                                </ul>\n                            </mdb-accordion-item-body>\n                        </mdb-accordion-item>\n\n                        <!-- Simple link -->\n                        <mdb-accordion-item class=\"no-collase\">\n                            <mdb-accordion-item-head mdbWavesEffect>\n                                <i class=\"fa fa-hand-pointer-o\"></i> Simple link</mdb-accordion-item-head>\n                            <mdb-accordion-item-body></mdb-accordion-item-body>\n                        </mdb-accordion-item>\n\n                        <!-- Collapsible link -->\n                        <mdb-accordion-item>\n                            <mdb-accordion-item-head mdbWavesEffect>\n                                <i class=\"fa fa-eye\"></i> Collapsible menu 2</mdb-accordion-item-head>\n                            <mdb-accordion-item-body>\n                                <ul>\n                                    <li>\n                                        <a href=\"#\" class=\"waves-effect\" mdbWavesEffect>Link 1</a>\n                                    </li>\n                                    <li>\n                                        <a href=\"#\" class=\"waves-effect\" mdbWavesEffect>Link 2</a>\n                                    </li>\n                                </ul>\n                            </mdb-accordion-item-body>\n                        </mdb-accordion-item>\n\n                        <!-- Simple link -->\n                        <mdb-accordion-item class=\"no-collase\">\n                            <mdb-accordion-item-head mdbWavesEffect>\n                                <a [routerLink]=\"['/help']\">\n                                    <i class=\"fa fa-diamond\"></i> Help</a>\n                            </mdb-accordion-item-head>\n                            <mdb-accordion-item-body></mdb-accordion-item-body>\n                        </mdb-accordion-item>\n\n                    </mdb-accordion>\n                </ul>\n            </li>\n            <!--/. Side navigation links -->\n        </links>\n        <div class=\"sidenav-bg mask-strong\"></div>\n    </mdb-side-nav>\n    <!--/. Sidebar navigation -->\n\n    <!-- Navbar -->\n    <mdb-navbar SideClass=\"navbar navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav\" [containerInside]=\"false\">\n\n        <navlinks class=\"navbar-container\">\n            <!-- SideNav slide-out button -->\n            <div class=\"float-left\">\n                <a (click)=\"sidenav.show()\" class=\"button-collapse-non-fixed hidden-nav\">\n                    <i class=\"fa fa-bars\"></i>\n                </a>\n            </div>\n            <!--/. SideNav slide-out button -->\n        </navlinks>\n\n        <mdb-navbar-brand>\n            <!-- Breadcrumb-->\n            <div class=\"breadcrumbs breadcrumbs-non-fixed breadcrumb-dn mr-auto\">\n                <a [routerLink]=\"['/list']\">All&nbsp;Wordpress</a>\n            </div>\n            <!--/. Breadcrumb-->\n        </mdb-navbar-brand>\n\n        <navlinks>\n            <ul class=\"nav navbar-nav nav-flex-icons ml-auto ie-double-nav\">\n                <li class=\"nav-item bg-success rounded\">\n                    <a class=\"nav-link waves-light small\" mdbWavesEffect>\n                        <i class=\"fa fa-plus mr-1\"></i>\n                        <span class=\"clearfix d-none d-sm-inline-block\"> Добавить сайт</span>\n                    </a>\n                </li>\n                <li class=\"nav-item\">\n                    <a class=\"nav-link waves-light\" mdbWavesEffect [routerLink]=\"['/api']\">\n                        <i class=\"fa fa-braille mr-1\"></i>\n                        <span class=\"clearfix d-none d-sm-inline-block\"> API</span>\n                    </a>\n                </li>\n                <li class=\"nav-item\">\n                    <a class=\"nav-link waves-light\" mdbWavesEffect>\n                        <i class=\"fa fa-bell-o mr-1\"></i>\n                        <span class=\"clearfix d-none d-sm-inline-block\"> Уведомления</span>\n                    </a>\n                </li>\n                <li class=\"nav-item\">\n                    <a class=\"nav-link waves-light\" mdbWavesEffect [routerLink]=\"['/login']\">\n                        <i class=\"fa fa-user mr-1\"></i>\n                        <span class=\"clearfix d-none d-sm-inline-block\"> Аккаунт</span>\n                    </a>\n                </li>\n            </ul>\n        </navlinks>\n    </mdb-navbar>\n    <!--/. Navbar -->\n\n</header>\n<!--/.Double navigation-->\n\n\n<!--Main Layout-->\n<main>\n    <div class=\"container mt-3\">\n        <router-outlet></router-outlet>\n    </div>\n</main>\n<!--/Main layout-->"
 
 /***/ }),
 
@@ -447,12 +447,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _list_list_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./list/list.component */ "./src/app/list/list.component.ts");
 /* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
 /* harmony import */ var _api_api_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./api/api.component */ "./src/app/api/api.component.ts");
+/* harmony import */ var _help_help_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./help/help.component */ "./src/app/help/help.component.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -476,9 +480,12 @@ var AppModule = /** @class */ (function () {
                 _login_login_component__WEBPACK_IMPORTED_MODULE_9__["LoginComponent"],
                 _list_list_component__WEBPACK_IMPORTED_MODULE_10__["ListComponent"],
                 _home_home_component__WEBPACK_IMPORTED_MODULE_11__["HomeComponent"],
-                _api_api_component__WEBPACK_IMPORTED_MODULE_12__["ApiComponent"]
+                _api_api_component__WEBPACK_IMPORTED_MODULE_12__["ApiComponent"],
+                _help_help_component__WEBPACK_IMPORTED_MODULE_13__["HelpComponent"]
             ],
             imports: [
+                _angular_common_http__WEBPACK_IMPORTED_MODULE_14__["HttpClientModule"],
+                _angular_http__WEBPACK_IMPORTED_MODULE_4__["HttpModule"],
                 _app_routing__WEBPACK_IMPORTED_MODULE_7__["AppRoutingModule"],
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
                 _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_1__["BrowserAnimationsModule"],
@@ -519,12 +526,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
 /* harmony import */ var _list_list_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./list/list.component */ "./src/app/list/list.component.ts");
 /* harmony import */ var _api_api_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./api/api.component */ "./src/app/api/api.component.ts");
+/* harmony import */ var _help_help_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./help/help.component */ "./src/app/help/help.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -543,6 +552,9 @@ var routes = [
     },
     {
         path: 'api', component: _api_api_component__WEBPACK_IMPORTED_MODULE_5__["ApiComponent"]
+    },
+    {
+        path: 'help', component: _help_help_component__WEBPACK_IMPORTED_MODULE_6__["HelpComponent"]
     }
 ];
 var AppRoutingModule = /** @class */ (function () {
@@ -565,6 +577,69 @@ var AppRoutingModule = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/help/help.component.html":
+/*!******************************************!*\
+  !*** ./src/app/help/help.component.html ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  help works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/help/help.component.scss":
+/*!******************************************!*\
+  !*** ./src/app/help/help.component.scss ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/help/help.component.ts":
+/*!****************************************!*\
+  !*** ./src/app/help/help.component.ts ***!
+  \****************************************/
+/*! exports provided: HelpComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HelpComponent", function() { return HelpComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var HelpComponent = /** @class */ (function () {
+    function HelpComponent() {
+    }
+    HelpComponent.prototype.ngOnInit = function () {
+    };
+    HelpComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-help',
+            template: __webpack_require__(/*! ./help.component.html */ "./src/app/help/help.component.html"),
+            styles: [__webpack_require__(/*! ./help.component.scss */ "./src/app/help/help.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], HelpComponent);
+    return HelpComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/home/home.component.html":
 /*!******************************************!*\
   !*** ./src/app/home/home.component.html ***!
@@ -572,7 +647,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n    home works!\n</p>"
+module.exports = "<div class=\"form-group\">\n    <label>Имя</label>\n    <input class=\"form-control\" name=\"username\" [(ngModel)]=\"user.name\" />\n</div>\n<div class=\"form-group\">\n    <label>Возраст</label>\n    <input class=\"form-control\" type=\"number\" name=\"age\" [(ngModel)]=\"user.age\" />\n</div>\n<div class=\"form-group\">\n    <button class=\"btn btn-default\" (click)=\"submit(user)\">Отправить</button>\n</div>\n<div *ngIf=\"done\">\n    <div>Получено от сервера:</div>\n    <div>Имя: {{receivedUser.name}}</div>\n    <div>Возраст: {{receivedUser.age}}</div>\n</div>"
 
 /***/ }),
 
@@ -598,6 +673,8 @@ module.exports = ""
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeComponent", function() { return HomeComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _http_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./http.service */ "./src/app/home/http.service.ts");
+/* harmony import */ var _user__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./user */ "./src/app/home/user.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -608,20 +685,94 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
+
 var HomeComponent = /** @class */ (function () {
-    function HomeComponent() {
+    function HomeComponent(httpService) {
+        this.httpService = httpService;
+        this.user = new _user__WEBPACK_IMPORTED_MODULE_2__["User"](); // данные вводимого пользователя
+        this.done = false;
     }
-    HomeComponent.prototype.ngOnInit = function () {
+    HomeComponent.prototype.submit = function (user) {
+        var _this = this;
+        this.httpService.postData(user)
+            .subscribe(function (data) { _this.receivedUser = data; _this.done = true; }, function (error) { return console.log(error); });
     };
     HomeComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-home',
             template: __webpack_require__(/*! ./home.component.html */ "./src/app/home/home.component.html"),
-            styles: [__webpack_require__(/*! ./home.component.scss */ "./src/app/home/home.component.scss")]
+            styles: [__webpack_require__(/*! ./home.component.scss */ "./src/app/home/home.component.scss")],
+            providers: [_http_service__WEBPACK_IMPORTED_MODULE_1__["HttpService"]]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [_http_service__WEBPACK_IMPORTED_MODULE_1__["HttpService"]])
     ], HomeComponent);
     return HomeComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/home/http.service.ts":
+/*!**************************************!*\
+  !*** ./src/app/home/http.service.ts ***!
+  \**************************************/
+/*! exports provided: HttpService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HttpService", function() { return HttpService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var HttpService = /** @class */ (function () {
+    function HttpService(http) {
+        this.http = http;
+    }
+    // http://localhost:60489/Home/PostUser  ASP.NET MVC 5
+    // http://localhost:8080/angular/setUser.php     PHP
+    // http://localhost:60820/api/values        ASP NET Wep API 2
+    HttpService.prototype.postData = function (user) {
+        var body = { name: user.name, age: user.age };
+        return this.http.post('http://backend.x-ali.ru/', body);
+    };
+    HttpService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])(),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
+    ], HttpService);
+    return HttpService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/home/user.ts":
+/*!******************************!*\
+  !*** ./src/app/home/user.ts ***!
+  \******************************/
+/*! exports provided: User */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "User", function() { return User; });
+var User = /** @class */ (function () {
+    function User() {
+    }
+    return User;
 }());
 
 

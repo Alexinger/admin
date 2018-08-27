@@ -7,7 +7,7 @@
         <mdb-navbar-brand>
             <li>
                 <div class="logo-wrapper waves-light">
-                    <a href="#">
+                    <a href="/">
                         <img src="http://mdbootstrap.com/img/logo/mdb-transparent.png" class="img-fluid flex-center">
                     </a>
                 </div>
@@ -62,7 +62,9 @@
                         <!-- Simple link -->
                         <mdb-accordion-item class="no-collase">
                             <mdb-accordion-item-head mdbWavesEffect>
-                                <i class="fa fa-diamond"></i> Simple link 2</mdb-accordion-item-head>
+                                <a [routerLink]="['/help']">
+                                    <i class="fa fa-diamond"></i> Help</a>
+                            </mdb-accordion-item-head>
                             <mdb-accordion-item-body></mdb-accordion-item-body>
                         </mdb-accordion-item>
 
@@ -91,7 +93,7 @@
         <mdb-navbar-brand>
             <!-- Breadcrumb-->
             <div class="breadcrumbs breadcrumbs-non-fixed breadcrumb-dn mr-auto">
-                <p i18n>All&nbsp;Wordpress</p>
+                <a [routerLink]="['/list']">All&nbsp;Wordpress</a>
             </div>
             <!--/. Breadcrumb-->
         </mdb-navbar-brand>
@@ -105,7 +107,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link waves-light" mdbWavesEffect>
+                    <a class="nav-link waves-light" mdbWavesEffect [routerLink]="['/api']">
                         <i class="fa fa-braille mr-1"></i>
                         <span class="clearfix d-none d-sm-inline-block"> API</span>
                     </a>
@@ -117,7 +119,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link waves-light" mdbWavesEffect>
+                    <a class="nav-link waves-light" mdbWavesEffect [routerLink]="['/login']">
                         <i class="fa fa-user mr-1"></i>
                         <span class="clearfix d-none d-sm-inline-block"> Аккаунт</span>
                     </a>
@@ -133,7 +135,7 @@
 
 <!--Main Layout-->
 <main>
-    <div class="container mt-5">
+    <div class="container mt-3">
         <router-outlet></router-outlet>
     </div>
 </main>

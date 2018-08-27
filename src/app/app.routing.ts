@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { ListComponent } from './list/list.component';
 import { ApiComponent } from './api/api.component';
+import { HelpComponent } from './help/help.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,9 @@ const routes: Routes = [
   },
   {
     path: 'api', component: ApiComponent
+  },
+  {
+    path: 'help', component: HelpComponent
   }
 ];
 
